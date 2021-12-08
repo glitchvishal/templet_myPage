@@ -1,0 +1,660 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,700;1,100&family=Titillium+Web:wght@300;400;900&display=swap");
+@import url("https://fonts.gstatic.comhttps://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" );
+@import url("https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&family=Titillium+Web&display=swap");
+@import url("https://fonts.googleapis.com/csscss2?family=Acme&family=Architects+Daughter&family=Comforter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Acme&family=Architects+Daughter&family=Comforter&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Monterrey, Consolas,sans-serif;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    z-index: 1;
+    backdrop-filter: blur(7px);
+    /* box-shadow: 0px 5px 5px 0px #eee; */
+}
+
+.header a {
+    text-decoration: none;
+    font-family: "titillium web",sans-serif;
+    /* color: #855A5C; */
+    color: grey;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu ul {
+    position: relative;
+    list-style: none;
+    display: flex;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.menu ul li a:hover {
+    color: var(--overlay-color);
+    background-color: #fdfdfd;
+}
+
+/* .nav-item {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-item li a {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    transition: background 0.3s ease-in-out;
+}
+
+.nav-item li a:hover {
+    background-color: #66101F;
+    color: #fff;
+} */
+
+
+
+
+
+.toggle::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+	content: "\f0c9";
+    font-size: 2em;
+}
+
+.toggle {
+    position: relative;
+    color: gray;
+    display: none;
+    width: 60px;
+    height: 60px;
+}
+
+.toggle.active::before {
+    content: "\f00d";
+}
+
+
+
+.section{
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: darkslategrey;
+}
+
+.hero-section{
+    /* background-color: #B8D4E3; */
+    background-color: #111111;
+    background-image: url();
+}
+
+.hero-col{
+    padding: clamp(1rem, 8vw, 5rem);
+    max-width: 50%;
+    font-family: Fuzzy bubbles;
+    font-weight: bold;
+}
+
+.section h1{
+    font-family: "titillium web",sans-serif;
+    font-size: clamp(60px, 8vw, 200px);
+    font-weight: 700;
+    line-height:3vw;
+    /* color: #b49396; */
+    color: gray;
+    text-transform: uppercase;
+}
+
+.section h2 {
+    font-size: clamp(18px, 2.5vw, 60px);
+    /* color: #66101F; */
+    /* color: whitesmoke; */
+    /* color:#5a4d70; */
+    color: #dfdbe5;
+    padding-left: 3rem;
+    text-transform: uppercase;
+}
+
+.section p {
+    /* color: #8A8E91; */
+    /* color: #5a4d70; */
+    color: whitesmoke;
+    padding-right: 1rem;
+}
+
+.hero-section img {
+    width:  clamp(250px 30vw, 500px);
+    box-shadow: 3px 3px 20px 1px white;
+}
+
+.custom-shape-divider-bottom-1638501773 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1638501773 svg {
+    position: relative;
+    display: block;
+    width: calc(159% + 1.3px);
+    height: 140px;
+}
+
+.custom-shape-divider-bottom-1638501773 .shape-fill {
+    fill: #FFFFFF;
+}
+
+.another-col{
+    width: clamp(300px, 50vw, 600px);
+    /* background-color: black; */
+}
+
+
+/* .member-list{
+    /* background-color: #dfdbe5; */
+
+
+
+.member-img{
+    height:14rem;
+    width: 16rem;
+    border-radius: 50%;
+}
+
+.details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fdfdfd;
+    background-color:none;
+    padding: 3px;
+    margin: 2px;
+    background: transparent 0.5px;
+    
+}
+
+.member-name{
+    font-family: 'Architects Daughter', cursive;
+    text-transform: uppercase;
+    font-weight:500px;
+    border-bottom: 1px solid black;
+    padding-top: 2px;
+}
+
+.member-name:hover{
+    cursor: pointer;
+}
+
+.member-work  {
+    font-family: 'Architects Daughter', cursive;
+}
+
+.member-home{
+    font-family: "titillium web",sans-serif;
+}
+
+.member-social-list{
+    padding: 10px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+
+.member-icon{
+    padding-left: 20px;
+    cursor: pointer;
+    font: size 15px;
+}
+
+.member-icon:active{
+    color: gray;
+    transition: all 0.5s ease-in-out;
+}
+
+.member{
+    display : flex;
+    justify-content: space-around;
+    padding: 4rem;
+    flex-wrap: wrap;
+    
+}
+
+.title-member{
+    display: flex;
+    font-size: 2rem;
+    padding-top: 2rem;
+    font-family: 'Acme', sans-serif;
+    text-transform: uppercase;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+
+.member-box{
+    justify-content: center;
+    align-items: center;
+    padding: 4rem;
+    border: solid 2px black;
+    margin: 1rem;
+    background-color: darkslategrey;
+    color: #fdfdfd;
+    border-radius: 5px;
+    /* background-color: #dfdbe5; */
+}
+
+.member-box:hover{
+    box-shadow: 3px 3px 20px 1px gray;
+    transition:all 0.3s ease-in-out;
+}
+
+.member-box:active{
+    background-color: #eeffdb93;
+}
+
+.section3{
+    height: 120vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color:gray; */
+    /* background-color:#B8D4E3; */
+    background-color:#fdfdfd;
+}
+
+/* .another-col{
+    background-color:#fdfdfd;
+} */
+
+.section3 span{
+    font-family: "titillium web",sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height:3vw;
+    color: #5a4d70;
+    text-transform: uppercase;
+    padding: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+
+}
+
+
+
+.form{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    background: rgba( 255, 255, 255, 0.3 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 6px );
+    -webkit-backdrop-filter: blur( 6px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.form :focus{
+    border-bottom: 2px solid black;
+    outline: none;
+    transition:ease-in-out 0.5s;
+}
+
+
+.form>input{
+    margin: 0;
+    font-weight: 400;
+    border: 0.5px solid black;
+}
+
+/* .form .first-name{
+    background-color: #B8B8F3;
+    backdrop-filter: blur( 10px );
+    color: black;
+    
+}
+
+.form .last-name{
+    background-color: #a8a8f5;
+    backdrop-filter: blur( 10px );
+    /* opacity: 0.5; */
+/* }
+.form .email-input{
+    background-color: #a5a5fd;
+    backdrop-filter: blur( 10px );
+    opacity: 0.5; 
+} */
+
+.form>label{
+    margin: 10px ;
+    font-weight: 500;
+    font-size: 16px;
+    color: #111111;
+    font-family: "titillium web",sans-serif;
+    padding-bottom: 2px;
+}
+
+.input{
+    margin: 0.5rem;
+    padding: 5px;
+    background-color: #ffffff;
+    border: none;
+    font-size: 20px;
+    color: black;
+    height: 3rem;
+}
+
+.input:hover{
+    box-shadow: 0px 0px 3px 1px gray;
+}
+
+
+
+.btnSubmit{
+    margin-top: 30px ;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: teal;
+    border: none;
+    color: white;
+    border-radius: 1px;
+    padding: 10px;
+    width: 30%;
+}
+
+.btnSubmit:hover {
+    /* background-color: rgb(2, 80, 80); */
+    box-shadow: 0px 0px 5px 1px gray;
+}
+
+
+.footer{
+    justify-content: center;
+    align-items: center;
+    height: 15vw;
+    padding: 10px;
+}
+
+.footer-content{
+    display : flex;
+    padding: 10px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.footer-title{
+    display: flex;
+    font-size: 2rem;
+    padding-top: 2rem;
+    font-family: 'Acme', sans-serif;
+    text-transform: uppercase;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+
+.creater-image{
+    height:6rem;
+    width: 6rem;
+    border-radius: 50%;
+    
+}
+
+.creater-name{
+    padding: 5px;
+    padding-left: 10px;
+    font-family: 'Comforter', cursive;
+    font-size: 3rem;
+    border-bottom: 2px solid black;
+}
+
+.creater-details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-title{
+    padding: 2rem; 
+    font-size: 2rem;
+    font-weight: 200;  
+}
+
+.creater-social{
+    padding: 2rem;
+    font-family: 'Acme', sans-serif;
+}
+
+
+.footer-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.link-element{
+    padding: 5px;
+}
+
+
+
+
+
+
+/** For tablet devices **/
+@media (max-width: 1023px) {
+    .custom-shape-divider-bottom-1638501773 svg {
+        width: calc(200% + 1.3px);
+        height: 133px;
+    }
+
+
+    .menu {
+        display: none;
+
+    }
+
+    .menu.active{
+        display: flex;
+        height: 100vh;
+        background-color: #111111;
+        width: 100%;
+    }
+
+    .toggle{
+        display: flex;
+    }
+
+    .hero-col{
+        padding: 0;
+        padding-left: 20px;
+        
+    }
+
+    .hero-img{
+        display: none;
+    }
+
+    .member-box{
+        padding: 50px;
+    }
+
+
+    .form>label{
+        margin: 10px ;
+        font-weight: 300;
+        font-size: 10px;
+        color: #111111;
+        font-family: "titillium web",sans-serif;
+        padding-bottom: 2px;
+    }
+
+    .creater-image{
+        height:2rem;
+        width: 2rem;
+        border-radius: 50%;
+        
+    }
+    
+    .creater-name{
+        padding: 2px;
+        padding-left: 8px;
+        font-family: 'Comforter', cursive;
+        font-size: 1rem;
+        border-bottom: 2px solid black;
+    }
+
+    .creater-social{
+        padding: 1rem;
+        font-family: 'Acme', sans-serif;
+    }
+    
+    
+    .footer-links{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+    
+    
+    .link-element{
+        padding: 2px;
+    }
+
+    .social-title{
+        padding: 1rem; 
+        font-size: 1rem;
+        font-weight: 200;  
+    }
+    
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+    .custom-shape-divider-bottom-1638501773 svg {
+        width: calc(150% + 1.3px);
+        height: 150px;
+    }
+
+    .menu.active{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+
+        background-color: #111111;
+        width: 100%;
+    }
+
+    .menu ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+
+    .toggle{
+        display: block;
+    }
+
+    .hero-col{
+        max-width: 100%;
+        padding: 10px;
+        padding-left: 30px;
+    } 
+
+    .header a {
+        font-size:1rem;
+    }
+
+    .menu-btn{
+        display: flex;
+    }
+
+    .nav-item {
+        flex-direction: column;
+        justify-content: space-around;
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        height: 100vh;
+        transform: translateX(100vw);
+        background-color: #dfdbe5;
+        transition: all 0.5s ease-in-out;
+    }
+
+ 
+    
+    .nav-item li {
+        width: 100%;
+        height: 100%;
+    }
+
+
+      .member-box{
+          padding:20px;
+      }
+
+      .form>label{
+        margin: 10px ;
+        font-weight: 300;
+        font-size: 10px;
+        color: #111111;
+        font-family: "titillium web",sans-serif;
+        padding-bottom: 2px;
+    }
+
+      .footer{
+          flex-direction: row;
+      }
+
+
+   
+}
+
+
